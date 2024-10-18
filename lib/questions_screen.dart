@@ -24,7 +24,7 @@ class _QuestionScreen extends State<QuestionsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    
+
     final currentQuestion = questions[currQuesIndex];
     return Container(
       width: double.infinity,
@@ -34,12 +34,14 @@ class _QuestionScreen extends State<QuestionsScreen> {
       child: Container(
         margin: const EdgeInsets.all(40),
         child: Column(
+
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Text(
               currentQuestion.question,
               style: const TextStyle(
+                
                 color: Color.fromRGBO(255, 255, 255, 1),
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
