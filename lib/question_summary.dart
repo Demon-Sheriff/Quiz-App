@@ -4,8 +4,8 @@ import 'package:quiz_app/data/questions.dart';
 import 'package:quiz_app/models/user_summary.dart';
 
 class QuestionSummary extends StatelessWidget {
-  List<UserSummary> userSummaryData;
-  QuestionSummary({super.key, required this.userSummaryData});
+  final List<UserSummary> userSummaryData;
+  const QuestionSummary({super.key, required this.userSummaryData});
 
   @override
   Widget build(BuildContext context) {
