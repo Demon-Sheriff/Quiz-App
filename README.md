@@ -59,5 +59,6 @@ For more information on Flutter development, check out the official resources:
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For additional guidance, view the [online documentation](https://docs.flutter.dev/), which provides comprehensive tutorials, samples, and API references.
+
+##### For additional guidance, view the [online documentation](https://docs.flutter.dev/), which provides comprehensive tutorials, samples, and API references.
 
