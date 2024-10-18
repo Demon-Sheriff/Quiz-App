@@ -16,7 +16,6 @@ class ResultScreen extends StatefulWidget {
 }
 
 class _ResultScreen extends State<ResultScreen> {
-
   List<UserSummary> getSummaryOfQuiz() {
     List<UserSummary> userSummaryData = [];
     // print(widget.answers);
@@ -54,7 +53,7 @@ class _ResultScreen extends State<ResultScreen> {
     int score = getScore();
     return Container(
       decoration: BoxDecoration(
-        color: Colors.amber,
+        color: const Color.fromARGB(255, 59, 4, 142),
       ),
       width: double.infinity,
       child: Container(
@@ -78,9 +77,12 @@ class _ResultScreen extends State<ResultScreen> {
             SizedBox(
               height: 30,
             ),
-            ElevatedButton(
+            ElevatedButton.icon(
+              icon: Icon(
+                Icons.restart_alt_sharp,
+              ),
               onPressed: widget.onPress,
-              child: Text('Restart'),
+              label: Text('Restart'),
             )
           ],
         ),

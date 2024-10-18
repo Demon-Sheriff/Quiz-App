@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quiz_app/answer_circle.dart';
 import 'package:quiz_app/data/questions.dart';
 import 'package:quiz_app/models/user_summary.dart';
 
@@ -19,10 +20,7 @@ class QuestionSummary extends StatelessWidget {
                 return Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      (element.questionIndex + 1).toString(),
-                      style: TextStyle(),
-                    ),
+                    AnswerCircle(currentUserSummary: element),
                     const SizedBox(
                       width: 15,
                     ),
@@ -43,16 +41,29 @@ class QuestionSummary extends StatelessWidget {
                           Text(
                             // Display the User's answer
                             element.userAnswer,
+                            style: TextStyle(
+                              color: const Color.fromARGB(255, 255, 238, 0),
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
-                          Text(// Display the Correct Answer of the question
-                              questions[element.questionIndex].options[0]),
+                          Text(
+                            // Display the Correct Answer of the question
+                            questions[element.questionIndex].options[0],
+                            style: TextStyle(
+                              color: const Color.fromARGB(255, 0, 255, 76),
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 20,
+                          )
                         ],
                       ),
                     ),
                   ],
                 );
               },
-            )
+            ),
           ],
         ),
       ),
