@@ -1,3 +1,4 @@
+
 # Quiz App
 
 A Flutter project built to create an interactive quiz experience.
@@ -20,7 +21,11 @@ This app allows users to take quizzes on various topics, tracking their performa
 
 ## Video Demo
 Check out the demo of the app in action:  
-![](./demoVideo/Screen%20Recording%202024-10-18%20164358.mp4)
+
+
+https://github.com/user-attachments/assets/3a0c0851-174f-40bb-965a-0efe1c56beb9
+
+
 
 ## Getting Started
 
